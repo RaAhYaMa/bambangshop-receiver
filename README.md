@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 2: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -91,3 +91,9 @@ This is the place for you to write reflections:
 2. Rust enforces strict ownership and borrowing rules to ensure memory safety and prevent data races. Allowing mutation of static variables via static functions could lead to unpredictable behavior and potential data races in concurrent contexts. Instead, Rust encourages the use of synchronization primitives like `RwLock<>` or `Mutex<>` to manage access to shared data safely.
 
 #### Reflection Subscriber-2
+
+1. Yes, I explored the `src/lib.rs` file and learned about the foundational setup of the Rocket framework, including how routes and handlers are defined. This helped me understand the overall architecture of the application and how different components interact with each other.
+
+2. The Observer pattern simplifies the process of adding new subscribers by allowing them to register with the notification system without modifying the core logic. This modularity makes it easy to scale the application by adding more instances of the Receiver or even the Main app, as each instance can independently subscribe to notifications.
+
+3. I have created my own tests and enhanced the documentation in my Postman collection. This has proven to be extremely useful for ensuring the reliability of the notification system and for providing clear guidance on how to use the API effectively.
